@@ -1,0 +1,201 @@
+ody, html {
+    height: 100%;
+    margin: 0;
+    background-image: url("../images/floral.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.hero {
+    background-color: rgba(253, 253, 253, 0.644);
+    padding-top: 40px;
+    padding-bottom: 40px;
+    box-shadow: 0 0.5em 1em -0.125em rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.02);
+}
+
+.main-container {
+    max-width: 900px;
+}
+.portfolio-container {
+    max-width: 1050px;
+}
+
+hr {
+    background-color: hsl(62, 67%, 11%);
+    opacity: .15;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.navbar-item:hover, .icon:hover{
+    color: hsl(66, 47%, 77%);
+}
+
+/* NAVBAR */
+.navbar {
+    background: rgba(105, 131, 168, 0.041);
+}
+
+.navbar-item {
+    font-family: 'Roboto', sans-serif; 
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.menu-label {
+    color: rgb(78, 76, 76);
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar-item:hover {
+    background-color: rgba(253, 253, 253, 0.685);
+}
+
+* FOOTER */
+.contact-menu {
+    height: 100%;
+    padding: 20px;
+}
+
+.page-footer {
+    padding-bottom: 15px;
+    background: none;
+    background: rgba(247, 230, 3, 0.041);
+    padding-top: 25px;
+}
+
+.icon {
+    color: rgb(158, 144, 62);
+    font-size: 30px;
+    margin: 9px;
+}
+
+/************* ABOUT ME PAGE *************/
+
+.page-title {
+    font-size: 60px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: rgb(14, 13, 13);
+}
+
+.mysub {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    color: rgb(36, 35, 35);
+    margin-bottom: 0px;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.about-me {
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif; 
+}
+
+/************* PORTFOLIO CARDS *************/
+.pic-container {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .8s ease;
+    border-radius: 8px;
+}
+
+.card, .portfolio-img {
+    border-radius: 8px;
+}
+
+.overlay-card {
+    height: 100%;
+    width: 100%;
+    background: rgb(105,131,168);
+    background: radial-gradient(circle, rgba(105,131,168,1) 0%, rgba(68,86,111,1) 100%);
+}
+
+.card-footer {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+.card-footer {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+.card-links {
+    color: white;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.card-links:hover {
+    color: white;
+    font-weight: bold;
+}
+
+.card-footer-item:hover {
+    background-color: rgb(105,131,168);
+}
+
+.project-description {
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+
+.project-title {
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.project-card-content {
+    padding-top: 8%;
+}
+
+@media only screen and (min-width: 375px) {
+    .project-description {
+        font-size: 16px;
+        font-weight: 300;
+    }
+
+    .project-title {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .page-title, .mysub {
+        text-align: left;
+    }
+} 
+
+@media only screen and (min-width: 900px) {
+    .project-description {
+        font-size: 20px;
+    }
+
+    .project-title {
+        font-size: 34px;
+    }
+
+    .project-card-content {
+        padding-top: 15%;
+    }
+} 
+
