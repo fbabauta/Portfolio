@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-     // event listener for hamburger drop down menu
+    // event listener for hamburger drop down menu
     $(".navbar-burger").each(function () {
         $(this).on("click", function () {
             // targets data-target attribute which is equal to regular nav bar menu's ID
@@ -14,7 +14,7 @@ $(document).ready(function () {
     });
 
     // event listener when user clicks on project card - displays info
-    $(document).on("click", ".overlay", function() {
+    $(document).on("click", ".overlay", function () {
         $(".overlay").css("opacity", "0");
         $(this).css("opacity", ".95");
     });
@@ -30,7 +30,7 @@ $(document).ready(function () {
         $(".overlay").css("opacity", "0");
     });
 
-     // event listener for contact
+    // event listener for contact
     $(".contact-link").on("click", function (event) {
         event.preventDefault();
         $(".contact-modal").addClass("is-active");
@@ -49,7 +49,7 @@ $(document).ready(function () {
         this.imgURL = imgURL;
         this.siteURL = siteURL;
         this.repoURL = repoURL;
-    };
+    }
 
     // new Project Card instances
     const weatherCard = new ProjectCard(
@@ -76,7 +76,7 @@ $(document).ready(function () {
         "https://github.com/fbabauta/Code-Quiz-Challenge"
     );
 
-     const profileGenCard = new ProjectCard(
+    const profileGenCard = new ProjectCard(
         "Team Profile Generator",
         "A command-line-interface application, built with Node.js, that allows the user to easily generate a team profile webpage, featuring summaries of their team members.",
         "assets/images/myteam.png",
@@ -84,12 +84,11 @@ $(document).ready(function () {
         "https://github.com/fbabauta/Team-Profile-Generator"
     );
 
-     const passwordGenCard = new ProjectCard(
+    const passwordGenCard = new ProjectCard(
         "Password Generator",
         "Random password generator created by user based on their criteria",
         "assets/images/passwordgen.png",
         "https://fbabauta.github.io/Password-Generator/",
         "https://github.com/fbabauta/Password-Generator"
     );
-
-
+})
