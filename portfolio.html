@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+</head>
+<body>
+    
+     <!-- navbar -->
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+                data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-end">
+                <a class="navbar-item" href="index.html">About Me</a>
+                <a class="navbar-item" href="portfolio.html">Portfolio</a>
+                <a class="navbar-item contact-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- contact modal -->
+    <div class="modal contact-modal">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <div class="card">
+                <div class="card-content">
+                    <div class="menu" id="contact">
+                        <div class="has-text-centered">
+                            <img src="assets/images/fran.jpg" style="width: 125px;">
+                            <p class="menu-label">
+                                Contact | (253) 777-2654 | francine.babauta@outlook.com
+                            </p>
+                            <div class="">                          
+                                <a href="https://github.com/fbabauta" target="_blank">
+                                    <i class="fab fa-github icon"></i>
+                                </a>
+                                <a href="francine.babauta@outlook.com">
+                                    <i class="fas fa-envelope icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="modal-close is-large contact-modal-close" aria-label="close"></button>
+    </div>
+
+    <!-- main-content -->
+    <section class="hero portfolio-hero">
+        <div class="hero-body">
+            <div class="container main-container portfolio-container">
+                <h1 class="title page-title">
+                    Portfolio
+                </h1>
+                <h2 class="subtitle mysub">
+                    Projects created so far...
+                </h2>
+                <hr>
+                <div class="columns is-multiline" id="cards-container">
+                    <!-- Project cards go here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact footer -->
+    <footer class="footer page-footer">
+        <div class="menu" id="contact">
+            <div class="has-text-centered">
+                <p class="menu-label">
+                    Contact Me
+                </p>
+                <div class="">
+                    <a href="https://github.com/fbabauta" target="_blank">
+                        <i class="fab fa-github icon"></i>
+                    </a>
+                    <a href="mailto:francine.babauta@outlook.com">
+                        <i class="fas fa-envelope icon"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+    
+</body>
+</html>
