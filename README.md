@@ -15,4 +15,4 @@ This webpage is a work in progress and so are my skills. The more I learn and ma
 * jQuery
 
 ## Deployed Site
-https://fbabauta.github.io/Responsive-Portfolio/
+https://fbabauta.github.io/Portfolio
