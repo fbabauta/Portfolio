@@ -91,4 +91,50 @@ $(document).ready(function () {
         "https://fbabauta.github.io/Password-Generator/",
         "https://github.com/fbabauta/Password-Generator"
     );
-})
+
+    let projectCardsArr = [weatherCard, plannerCard, quizCard, profileGenCard, passwordGenCard];
+    
+     // function to render project cards to screen
+    function renderCard(card) {
+        let newCard = 
+        `<div class="column is-half">
+            <div class="card">
+                <div class="card-image">
+                    <figure class="image is-3by2 pic-container">
+                        <img src=${card.imgURL} alt="Placeholder image" class="portfolio-img">
+                        <div class="overlay">
+                            <div class="card overlay-card">
+                                <div class="card-content project-card-content has-text-centered">
+                                    <p class="title has-text-white project-title">
+                                        ${card.title}
+                                    </p>
+                                    <p class="subtitle is-6 has-text-white project-description">
+                                        ${card.about}
+                                    </p>
+                                </div>
+                                footer class="card-footer">
+                                    <p class="card-footer-item">
+                                        <a href=${card.siteURL} target="_blank" class="card-links">View Website</a>
+                                    </p>
+                                    <p class="card-footer-item">
+                                        <a href=${card.repoURL} target="_blank" class="card-links">GitHub Repo</a>
+                                    </p>
+                                </footer>
+                            </div>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+        </div>`
+
+         $("#cards-container").append(newCard);
+    };
+
+    function init() {
+        // render project cards
+        projectCardsArr.forEach(renderCard);
+    };
+
+    init();
+
+});
