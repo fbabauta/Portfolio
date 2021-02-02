@@ -34,7 +34,7 @@ $(document).ready(function () {
     $(".contact-link").on("click", function (event) {
         event.preventDefault();
         $(".contact-modal").addClass("is-active");
-    })
+    });
 
     // event listener closing contact modal
     $(".contact-modal-close").on("click", function (event) {
@@ -86,18 +86,42 @@ $(document).ready(function () {
 
     const passwordGenCard = new ProjectCard(
         "Password Generator",
-        "Random password generator created by user based on their criteria",
+        "Random password generator created by user based on their criteria.",
         "assets/images/passwordgen.png",
         "https://fbabauta.github.io/Password-Generator/",
         "https://github.com/fbabauta/Password-Generator"
     );
 
-    let projectCardsArr = [weatherCard, plannerCard, quizCard, profileGenCard, passwordGenCard];
+    const burgerCard = new ProjectCard(
+        "Eat-Da-Burger",
+        "A CRUD application to keep track of burger consumption.",
+        "assets/images/burgerdemo.jpg",
+        "https://stark-citadel-52180.herokuapp.com/",
+        "https://github.com/fbabauta/Eat-Da-Burger"
+    );
+
+    const workoutbuddiesCard = new ProjectCard(
+        "Workout-Buddies",
+        "Group Project: A full-stack web application that allows fitness enthusiast to connect with other buddies to workout together.",
+        "assets/images/workoutbuddies.png",
+        "https://workout-buddies.herokuapp.com/",
+        "https://github.com/Tuzosdaniel12/Workout-Buddies"
+    );
+
+    const notetakerCard = new ProjectCard(
+        "Note-Taker",
+        "A simple note taking application that makes creating, editing, and deleting notes as easy as 1-2-3.",
+        "assets/images/notetaker.jpg",
+        "https://serene-ocean-62587.herokuapp.com/",
+        "https://github.com/fbabauta/Note-Taker"
+    );
+
+    let projectCardsArr = [weatherCard, plannerCard, quizCard, profileGenCard, passwordGenCard, burgerCard, workoutbuddiesCard, notetakerCard];
     
      // function to render project cards to screen
     function renderCard(card) {
-        let newCard = 
-        `<div class="column is-half">
+        let newCard =
+            `<div class="column is-half">
             <div class="card">
                 <div class="card-image">
                     <figure class="image is-3by2 pic-container">
@@ -125,16 +149,16 @@ $(document).ready(function () {
                     </figure>
                 </div>
             </div>
-        </div>`
+        </div>`;
 
          $("#cards-container").append(newCard);
-    };
+    }
 
     function init() {
         // render project cards
         projectCardsArr.forEach(renderCard);
-    };
-
+    }
+    
     init();
 
 });
