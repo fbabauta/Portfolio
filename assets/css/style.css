@@ -17,6 +17,7 @@ body, html {
 .main-container {
     max-width: 900px;
 }
+
 .portfolio-container {
     max-width: 1050px;
 }
@@ -28,7 +29,7 @@ hr {
     margin-bottom: 40px;
 }
 
-.navbar-item:hover, .icon:hover{
+.navbar-item:hover, .icon:hover {
     color: hsl(66, 47%, 77%);
 }
 
@@ -54,7 +55,7 @@ hr {
     background-color: rgba(253, 253, 253, 0.685);
 }
 
-* FOOTER */
+/* FOOTER */
 .contact-menu {
     height: 100%;
     padding: 20px;
@@ -123,12 +124,6 @@ hr {
     width: 100%;
     background: rgb(105,131,168);
     background: radial-gradient(circle, rgba(105,131,168,1) 0%, rgba(68,86,111,1) 100%);
-}
-
-.card-footer {
-    position: absolute;
-    bottom: 0px;
-    width: 100%;
 }
 
 .card-footer {
