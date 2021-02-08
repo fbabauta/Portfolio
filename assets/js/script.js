@@ -22,12 +22,24 @@ $(document).ready(function () {
     // event listener when user hovers over project card - displays info
     $(document).on("mouseover", ".overlay", function () {
         $(".overlay").css("opacity", "0");
-        $(this).css("opacity", ".95");
+        $(this).css("opacity", ".95"); 
     });
 
     // event listener when mouse leaves project card - hides info
     $(document).on("mouseleave", ".overlay", function () {
         $(".overlay").css("opacity", "0");
+    });
+
+    // event listener for resume modal
+    $(".resume-link").on("click", function (event) {
+        event.preventDefault();
+        $(".resume-modal").addClass("is-active");
+    });
+
+    // event listener closing resume modal
+    $(".resume-modal-close").on("click", function (event) {
+        event.preventDefault();
+        $(".resume-modal").removeClass("is-active");
     });
 
     // event listener for contact
