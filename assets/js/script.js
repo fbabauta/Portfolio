@@ -96,6 +96,14 @@ $(document).ready(function () {
         "https://github.com/fbabauta/Team-Profile-Generator"
     );
 
+    const employeeCard = new ProjectCard(
+        "Employee Tracker",
+        "A command-line content management system used for tracking and managing employee information.",
+        "assets/images/employeetracker.png",
+        "https://drive.google.com/file/d/1RCQwB0Y5WyzEnkfEUS8lV4NFW_-LjdNg/view",
+        "https://github.com/fbabauta/Employee-Tracker-Database"
+    )
+
     const passwordGenCard = new ProjectCard(
         "Password Generator",
         "Random password generator created by user based on their criteria.",
@@ -128,7 +136,7 @@ $(document).ready(function () {
         "https://github.com/fbabauta/Note-Taker"
     );
 
-    let projectCardsArr = [weatherCard, plannerCard, quizCard, profileGenCard, passwordGenCard, burgerCard, workoutbuddiesCard, notetakerCard];
+    let projectCardsArr = [weatherCard, plannerCard, quizCard, profileGenCard, employeeCard, passwordGenCard, burgerCard, workoutbuddiesCard, notetakerCard];
     
      // function to render project cards to screen
     function renderCard(card) {
@@ -148,7 +156,7 @@ $(document).ready(function () {
                                         ${card.about}
                                     </p>
                                 </div>
-                                footer class="card-footer">
+                                <footer class="card-footer">
                                     <p class="card-footer-item">
                                         <a href=${card.siteURL} target="_blank" class="card-links">View Website</a>
                                     </p>
