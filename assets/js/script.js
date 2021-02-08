@@ -92,7 +92,7 @@ $(document).ready(function () {
         "Team Profile Generator",
         "A command-line-interface application, built with Node.js, that allows the user to easily generate a team profile webpage, featuring summaries of their team members.",
         "assets/images/myteam.png",
-        "https://github.com/fbabauta/Team-Profile-Generator",
+        "https://drive.google.com/file/d/1Jbrfq6vBOy8xpfAkQus-CXFzRJsw_2lB/view",
         "https://github.com/fbabauta/Team-Profile-Generator"
     );
 
