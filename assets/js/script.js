@@ -136,7 +136,15 @@ $(document).ready(function () {
         "https://github.com/fbabauta/Note-Taker"
     );
 
-    let projectCardsArr = [weatherCard, plannerCard, quizCard, profileGenCard, employeeCard, passwordGenCard, burgerCard, workoutbuddiesCard, notetakerCard];
+    const fitnessCard = new ProjectCard(
+        "Fitness-Tracker",
+        "Full-stack web app that utilizes Node.js and MongoDB to allow the user to keep track of their work-out information.",
+        "assets/images/fitness.jpg",
+        "https://fitness-trackapp.herokuapp.com/",
+        "https://github.com/fbabauta/Fitness-Tracker"
+    );
+
+    let projectCardsArr = [weatherCard, plannerCard, quizCard, profileGenCard, employeeCard, passwordGenCard, burgerCard, workoutbuddiesCard, notetakerCard, fitnessCard];
     
      // function to render project cards to screen
     function renderCard(card) {
